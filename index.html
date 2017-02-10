@@ -42,7 +42,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-repeat="task in taskList">
+      <tr v-repeat="task in taskList | filterBy search">
         <td>{{task.name}}</td>
         <td>{{task.address }}</td>
         <td>{{task.city}}</td>
