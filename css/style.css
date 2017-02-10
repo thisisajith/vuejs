@@ -1,0 +1,27 @@
+.hoteldetails
+{
+    background-color: aquamarine;
+    border-radius: 5px;
+    color: brown;
+    text-align: center;
+}
+#container
+{
+    margin-left: 150px;
+    
+    width: 800px;
+    background-color: beige;
+    padding-top: 10px;
+}
+#name{
+   width: 300px;
+}
+#city{
+   width: 300px;
+}
+#address{
+   width: 300px;
+}
+#shotelname,#saddress,#scity{
+  width: 300px;
+}

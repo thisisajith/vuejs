@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="vue.js"></script>
+ 
+          <title>
+   vue 
+    </title>
+    
+    </head>
+
+    <body>
+    
+   <div class="container" id="container">
+    <h1 class="hoteldetails">Hotel details</h1>
+    <div class="form-group">
+      <label for="nme">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="name of your hotel" v-model="newname">
+    </div>
+    <div class="form-group">
+      <label for="adrs">address:</label>
+      <input type="text" class="form-control" id="address"  placeholder="address of your hotel" v-model="newadd">
+    </div>
+          <div class="form-group">
+      <label for="cty">city:</label>
+      <input type="text" class="form-control" id="city"  placeholder="city name of your hotel" v-model="newcity">
+    </div><div>
+    
+    <button v-on="click:additem" type="button" class="btn btn-success">Submit</button></div>
+    <h3>search any:</h3>
+      <input type="text" class="form-control" id="name" placeholder="what you want to search..." v-model="search">
+
+      <table class="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>address</th>
+        <th>city</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-repeat="task in taskList">
+        <td>{{task.name}}</td>
+        <td>{{task.address }}</td>
+        <td>{{task.city}}</td>
+      </tr>
+        
+          </tbody>
+       </table>
+        </div>
+      <script src="script.js"></script>      
+    </body>
+
+</html>
